@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Socket.IO Chat</title>
+  </head>
+  <body>
+    <input type="text" id="inputMsg" placeholder="Tape ton message" />
+    <input type="text" id="inputuser" placeholder="Tape ton message" />
+    <button type="submit" id="sendBtn">Envoyer</button>
+    <ul id="msg"></ul>
+
+    <script>
+      const url = `http://localhost:3000/signup`;
+      const input = document.querySelector("#inputMsg");
+      const btnSend = document.querySelector("#sendBtn");
+      const inputuser = document.querySelector("#inputuser")
+
+      async function checkUser() {
+        let inputvalue = input.value;
+        let inputUserValue = inputuser.value;
+        if (inputvalue === "" || inputUserValue === "") return;
+
+        try {
+          const response = await fetch(`${url}`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ mdp: inputvalue, username: inputUserValue }),
+          });
+          const data = await response.json();
+          console.log(data);
+        } catch (err) {
+          console.log(err);
+        }
+      }
+
+      btnSend.addEventListener("click", () => {
+        checkUser();
+        input.value = "";
+        inputuser.value = "";
+      });
+    </script>
+  </body>
+</html>
