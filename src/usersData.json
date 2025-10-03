@@ -1,0 +1,272 @@
+[
+  {
+    "credentials": { "pseudo": "olivier", "mdp": "dadadada" },
+    "created_at": "2024-02-13T09:21:00Z",
+    "city": "Paris",
+    "active": true,
+    "email": "olivier@example.com",
+    "role": "user",
+    "notes": "Compte d'origine"
+  },
+  {
+    "credentials": { "pseudo": "daris", "mdp": "daran" },
+    "created_at": "2023-11-05T14:45:00Z",
+    "city": "Lyon",
+    "active": false,
+    "email": "daris@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "lea", "mdp": "L3aP@ss!" },
+    "created_at": "2025-01-07T18:10:00Z",
+    "city": "Marseille",
+    "active": true,
+    "email": "lea@example.com",
+    "role": "editor",
+    "notes": "Préfère notifications email"
+  },
+  {
+    "credentials": { "pseudo": "maxime", "mdp": "max2025" },
+    "created_at": "2024-06-21T07:30:00Z",
+    "city": "Toulouse",
+    "active": true,
+    "email": "maxime@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "camille", "mdp": "camIsCool9" },
+    "created_at": "2023-08-12T12:00:00Z",
+    "city": "Nice",
+    "active": false,
+    "email": "camille@example.com",
+    "role": "user",
+    "notes": "Compte inactif > 6 mois"
+  },
+  {
+    "credentials": { "pseudo": "simon", "mdp": "simon42" },
+    "created_at": "2024-09-02T21:05:00Z",
+    "city": "Nantes",
+    "active": true,
+    "email": "simon@example.com",
+    "role": "moderator",
+    "notes": "Modérateur forum"
+  },
+  {
+    "credentials": { "pseudo": "anais", "mdp": "anais_pass" },
+    "created_at": "2022-12-30T10:10:00Z",
+    "city": "Strasbourg",
+    "active": true,
+    "email": "anais@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "enzo", "mdp": "enzo_88" },
+    "created_at": "2024-03-15T16:40:00Z",
+    "city": "Montpellier",
+    "active": true,
+    "email": "enzo@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "julien", "mdp": "jubob123" },
+    "created_at": "2023-05-19T08:55:00Z",
+    "city": "Bordeaux",
+    "active": false,
+    "email": "julien@example.com",
+    "role": "user",
+    "notes": "Demande suppression en attente"
+  },
+  {
+    "credentials": { "pseudo": "marie", "mdp": "marie!@34" },
+    "created_at": "2024-11-11T11:11:00Z",
+    "city": "Lille",
+    "active": true,
+    "email": "marie@example.com",
+    "role": "editor",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "thomas", "mdp": "tomTom2020" },
+    "created_at": "2024-04-01T09:00:00Z",
+    "city": "Rennes",
+    "active": true,
+    "email": "thomas@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "nina", "mdp": "ninaLove" },
+    "created_at": "2023-09-23T13:33:00Z",
+    "city": "Grenoble",
+    "active": true,
+    "email": "nina@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "lucas", "mdp": "luk4s" },
+    "created_at": "2025-02-17T05:20:00Z",
+    "city": "Reims",
+    "active": true,
+    "email": "lucas@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "clara", "mdp": "clarA_01" },
+    "created_at": "2024-07-29T19:50:00Z",
+    "city": "Le Havre",
+    "active": false,
+    "email": "clara@example.com",
+    "role": "user",
+    "notes": "Mot de passe oublié récemment"
+  },
+  {
+    "credentials": { "pseudo": "arthur", "mdp": "arthurKing" },
+    "created_at": "2023-02-10T20:00:00Z",
+    "city": "Saint-Étienne",
+    "active": true,
+    "email": "arthur@example.com",
+    "role": "admin",
+    "notes": "Admin principal"
+  },
+  {
+    "credentials": { "pseudo": "sara", "mdp": "sara_passwd" },
+    "created_at": "2024-10-05T06:15:00Z",
+    "city": "Dijon",
+    "active": true,
+    "email": "sara@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "leo", "mdp": "leooo" },
+    "created_at": "2023-06-30T22:22:00Z",
+    "city": "Angers",
+    "active": true,
+    "email": "leo@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "noah", "mdp": "noah2022!" },
+    "created_at": "2024-01-18T15:05:00Z",
+    "city": "Clermont-Ferrand",
+    "active": false,
+    "email": "noah@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "emma", "mdp": "emm@_star" },
+    "created_at": "2025-03-02T03:30:00Z",
+    "city": "Metz",
+    "active": true,
+    "email": "emma@example.com",
+    "role": "editor",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "gustave", "mdp": "gusT_77" },
+    "created_at": "2022-10-09T17:45:00Z",
+    "city": "Nancy",
+    "active": true,
+    "email": "gustave@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "zoe", "mdp": "zoeZ" },
+    "created_at": "2024-08-08T08:08:00Z",
+    "city": "Bordeaux",
+    "active": true,
+    "email": "zoe@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "paul", "mdp": "paul#1" },
+    "created_at": "2023-04-14T14:14:00Z",
+    "city": "Lille",
+    "active": false,
+    "email": "paul@example.com",
+    "role": "user",
+    "notes": "Compte suspendu"
+  },
+  {
+    "credentials": { "pseudo": "lina", "mdp": "l1n4" },
+    "created_at": "2024-12-25T00:00:00Z",
+    "city": "Nice",
+    "active": true,
+    "email": "lina@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "marius", "mdp": "mari_us" },
+    "created_at": "2023-07-07T07:07:00Z",
+    "city": "Nantes",
+    "active": true,
+    "email": "marius@example.com",
+    "role": "moderator",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "sophie", "mdp": "s0phie!" },
+    "created_at": "2024-05-20T10:30:00Z",
+    "city": "Toulouse",
+    "active": true,
+    "email": "sophie@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "hugo", "mdp": "huGo99" },
+    "created_at": "2022-01-02T02:02:00Z",
+    "city": "Montpellier",
+    "active": false,
+    "email": "hugo@example.com",
+    "role": "user",
+    "notes": "Ancien compte"
+  },
+  {
+    "credentials": { "pseudo": "amelie", "mdp": "amelie*22" },
+    "created_at": "2025-04-10T12:00:00Z",
+    "city": "Paris",
+    "active": true,
+    "email": "amelie@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "adrien", "mdp": "adrien_pw" },
+    "created_at": "2023-03-03T03:03:00Z",
+    "city": "Rennes",
+    "active": true,
+    "email": "adrien@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "lea2", "mdp": "LeaDeux!" },
+    "created_at": "2024-11-30T23:59:00Z",
+    "city": "Strasbourg",
+    "active": true,
+    "email": "lea2@example.com",
+    "role": "user",
+    "notes": ""
+  },
+  {
+    "credentials": { "pseudo": "quentin", "mdp": "quentinQ" },
+    "created_at": "2023-10-16T16:16:00Z",
+    "city": "Dijon",
+    "active": false,
+    "email": "quentin@example.com",
+    "role": "user",
+    "notes": ""
+  }
+]

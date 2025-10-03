@@ -4,41 +4,53 @@ const app = express();
 const http = require("http");
 const server = http.createServer(app);
 const crypto = require("crypto");
+const fs = require("fs");
+
 app.use(cors());
 app.use(express.json());
 
-const user = [
-  {
-    name: "olivier",
-    mdp: crypto.createHash("sha256").update("dadadada").digest("hex"),
-  },
-  {
-    name: "daris",
-    mdp: crypto.createHash("sha256").update("daran").digest("hex"),
-  },
-];
-
 app.get("/users", (req, res) => {
-  res.send(user);
+  fs.readFile("src/usersData.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+    } else {
+      res.status(200).send(JSON.parse(data));
+    }
+  });
 });
 
 app.post("/signup", (req, res) => {
   const { mdp } = req.body;
-  const hashedInput = crypto.createHash("sha256").update(mdp).digest("hex");
-  console.log(hashedInput, mdp);
-  
-   const foundUser = user.find((u) => u.mdp === hashedInput);
+  const AOOhashedInput = crypto.createHash("sha256").update(mdp).digest("hex");
+  console.log("Mot de passe entré (hashé) :", hashedInput);
 
-   if (foundUser) {
-    res.status(200).send({
-      projet: 'chase game',
-      creation: '21/10/2024 '
-    })
-   }else {
-    res.status(401).send("Mauvais mot de passe")
-   }
+  fs.readFile("src/usersData.json", "utf8", (err, data) => {
+    if (err) {
+      console.log(err);
+      return res.status(500).send("Erreur serveur");
+    }
 
+    let users;
+    try {
+      users = JSON.parse(data);
+    } catch (parseErr) {
+      console.error(parseErr);
+      return res.status(500).send("Erreur parsing JSON");
+    }
+
+    const hashedStored = crypto
+      .createHash("sha256")
+      .update(users.credentials.mdp)
+      .digest("hex");
+
+    if (hashedStored === AOOhashedInput) {
+      res.status(200).send(users);
+    } else {
+      res.status(401).send("Mauvais mot de passe");
+    }
+  });
 });
+
 server.listen(3000, () => {
-  console.log("listening on localhost:3000");
+  console.log("app lancé");
 });

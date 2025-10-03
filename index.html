@@ -15,7 +15,7 @@
       const url = `http://localhost:3000/signup`;
       const input = document.querySelector("#inputMsg");
       const btnSend = document.querySelector("#sendBtn");
-      const inputuser = document.querySelector("#inputuser")
+      const inputuser = document.querySelector("#inputuser");
 
       async function checkUser() {
         let inputvalue = input.value;
@@ -28,7 +28,7 @@
             headers: {
               "Content-Type": "application/json",
             },
-            body: JSON.stringify({ mdp: inputvalue, username: inputUserValue }),
+            body: JSON.stringify({ mdp: inputvalue }),
           });
           const data = await response.json();
           console.log(data);
